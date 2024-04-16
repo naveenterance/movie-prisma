@@ -10,10 +10,16 @@ const typeDefs = gql`
     username: String
     movieId: String
     rating: String
+    review: String
   }
 
   type Mutation {
-    create(username: String!, movieId: String!, rating: String!): User
+    create(
+      username: String!
+      movieId: String!
+      rating: String!
+      review: String!
+    ): User
   }
 `;
 
